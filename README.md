@@ -1,7 +1,6 @@
 # LeetCode
-LeetCode记录
 
-## 剑指offer
+### 剑指offer
 
 3. 数组中重复的数字
 5. 替换空格
