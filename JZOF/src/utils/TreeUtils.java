@@ -5,6 +5,10 @@ import dataStruct.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
+
+/**
+ * 这个类用来打印二叉树
+*/
 public class TreeUtils {
     public static void printTree(TreeNode treeNode){
         if(treeNode != null){

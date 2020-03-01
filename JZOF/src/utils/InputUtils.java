@@ -6,6 +6,10 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Scanner;
 
+/**
+ * 提供输入方法
+*/
+
 public class InputUtils {
     public static Scanner getInput(InputStream inputStream){
         Scanner scanner = new Scanner(inputStream);
