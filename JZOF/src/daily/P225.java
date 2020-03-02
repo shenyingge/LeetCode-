@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 225. 用队列实现栈
+ * P225 用队列实现栈
 */
 public class P225 {
     MyStack myStack = new MyStack();
