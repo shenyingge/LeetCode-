@@ -26,8 +26,6 @@ public class P300 {
             for(int j = 0; j < i; j++){
                 if(nums[i] > nums[j]){
                     dp[i] = Math.max(dp[j]+1,dp[i]);
-                }else{
-                    dp[i] = Math.max(1,dp[i]);
                 }
                 //System.out.println(dp[i]);
             }
