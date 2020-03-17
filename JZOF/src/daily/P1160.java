@@ -45,7 +45,7 @@ public class P1160 {
                     break;
                 }
             }
-            if(tag == true) cnt += words[i].length();
+            if(tag) cnt += words[i].length();
         }
         return cnt;
     }
