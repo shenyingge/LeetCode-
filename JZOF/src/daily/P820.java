@@ -13,9 +13,6 @@ class Trie{
     boolean hasChild;
     Trie(){
         children = new Trie[26];
-        for(Trie t:children){
-            t = null;
-        }
         hasChild = false;
         count = 0;
     }
@@ -52,7 +49,7 @@ public class P820 {
             set.add(leaf);
         }
         for(Trie tmp:set){
-            if(tmp.hasChild == false){
+            if(!tmp.hasChild){
                 res += (tmp.count+1);
             }
         }
