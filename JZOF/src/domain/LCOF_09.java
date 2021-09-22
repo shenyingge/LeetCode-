@@ -13,8 +13,8 @@ public class LCOF_09 {
 }
 class CQueue {
 
-    private Stack<Integer> st1;
-    private Stack<Integer> st2;
+    private final Stack<Integer> st1;
+    private final Stack<Integer> st2;
 
     public CQueue() {
         st1 = new Stack<>();
@@ -22,6 +22,7 @@ class CQueue {
     }
 
     public void appendTail(int value) {
+        System.out.println();
         st1.push(value);
     }
 
