@@ -7,7 +7,7 @@ public class LCOF_26 {
         if(A == null && B == null)return true;
         else if(A == null || B == null)return false;
         boolean l = isSubStructure(A.left,B);
-        boolean mid = A.val == B.val ? isSimilar(A,B):false;
+        boolean mid = A.val == B.val && isSimilar(A, B);
         if(mid) return true;
         boolean r = isSubStructure(A.right,B);
         return l||r;
