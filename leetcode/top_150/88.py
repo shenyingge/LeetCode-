@@ -25,4 +25,3 @@ class Solution:
             i1 += 1
         for i in range(0, len(tmp_list)):
             nums1[i] = tmp_list[i]
-

@@ -42,14 +42,14 @@ class Ploy:
 
         n = f"{len(_keys)}"
         res = " ".join(pstr)
-        if n == '0':
+        if n == "0":
             return n
         return " ".join([n, res])
 
 
 def calc(p1: Ploy, p2: Ploy):
-    p1_list = [ PloyItem(k, p1.items[k]) for k in p1.items ]
-    p2_list = [ PloyItem(k, p2.items[k]) for k in p2.items ]
+    p1_list = [PloyItem(k, p1.items[k]) for k in p1.items]
+    p2_list = [PloyItem(k, p2.items[k]) for k in p2.items]
     res = Ploy([])
 
     for item_p1 in p1_list:
@@ -63,8 +63,8 @@ if __name__ == "__main__":
     p1 = input()
     p2 = input()
 
-    p1_list = p1.split(' ')[1:]
-    p2_list = p2.split(' ')[1:]
+    p1_list = p1.split(" ")[1:]
+    p2_list = p2.split(" ")[1:]
 
     p1_list = [float(i) for i in p1_list]
     p2_list = [float(i) for i in p2_list]

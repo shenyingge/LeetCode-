@@ -1,17 +1,17 @@
 class Sign:
-
     def __init__(self, _id, start, end):
         self.id = _id
         self.start = start
         self.end = end
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     n = input()
     res = []
 
     for i in range(0, int(n)):
         input_str = input()
-        _id, start, end = input_str.split(' ')
+        _id, start, end = input_str.split(" ")
 
         sign = Sign(_id, start, end)
         res.append(sign)

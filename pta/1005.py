@@ -1,24 +1,23 @@
 def print_res(s: str):
-
     char_list = [
-        'zero',
-        'one',
-        'two',
-        'three',
-        'four',
-        'five',
-        'six',
-        'seven',
-        'eight',
-        'nine',
-        'ten'
+        "zero",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
     ]
     s_list = [char_list[int(ch)] for ch in s]
-    return ' '.join(s_list)
+    return " ".join(s_list)
 
 
 def calc(s: str):
-    if s == '' or len(s) == 1:
+    if s == "" or len(s) == 1:
         return s
     mid = len(s) // 2
     sl = calc(s[:mid])
@@ -31,8 +30,8 @@ def calc(s: str):
 
     arr_l.reverse()
     arr_r.reverse()
-    arr_l += ['0'] * (max_len - len(arr_l))
-    arr_r += ['0'] * (max_len - len(arr_r))
+    arr_l += ["0"] * (max_len - len(arr_l))
+    arr_r += ["0"] * (max_len - len(arr_r))
 
     li, ri = 0, 0
     tag = 0
@@ -41,7 +40,7 @@ def calc(s: str):
     while li < len(arr_l) and ri < len(arr_r):
         cur_num = int(arr_l[li]) + int(arr_r[ri]) + tag
         if cur_num >= 10:
-            cur_num -= 10;
+            cur_num -= 10
             tag = 1
         else:
             tag = 0
@@ -50,10 +49,11 @@ def calc(s: str):
         ri += 1
 
     if tag == 1:
-        res_num += ['1']
+        res_num += ["1"]
     res_num.reverse()
-    res = ''.join(res_num)
+    res = "".join(res_num)
     return res
+
 
 if __name__ == "__main__":
     n = input()

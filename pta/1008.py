@@ -1,6 +1,6 @@
-if __name__ == '__main__':
+if __name__ == "__main__":
     input_str = input()
-    input_list = input_str.split(' ')
+    input_list = input_str.split(" ")
     input_list = [int(i) for i in input_list]
     input_list = input_list[1:]
     res = 0
